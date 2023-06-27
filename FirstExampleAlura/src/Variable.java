@@ -1,6 +1,7 @@
-public class Main {
+public class Variable {
     public static void main(String[] args) {
         System.out.println("Hello world!");
+        System.out.println("Variables");
 
         // Variable Types
         // Int
@@ -46,15 +47,15 @@ public class Main {
         System.out.println("Word -> " + word);
 
         // Variables and memory
-        int number_one = 5;
-        int number_two = 9;
-        System.out.println("Number Two -> " + number_two);
+        int numberOne = 5;
+        int numberTwo = 9;
+        System.out.println("Number Two -> " + numberTwo);
 
-        number_two = number_one;
-        System.out.println("Number Two -> " + number_two);
+        numberTwo = numberOne;
+        System.out.println("Number Two -> " + numberTwo);
 
-        number_one = 88;
-        System.out.println("Number Two -> " + number_two);
+        numberOne = 88;
+        System.out.println("Number Two -> " + numberTwo);
 
     }
 }
