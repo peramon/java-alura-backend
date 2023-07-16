@@ -1,7 +1,9 @@
+// Entity Account
 public class Account {
     // Variables for account data
-    String balance, agency, holder;
-    int number;
-
+    Double balance;
+    int agency, number;
+    String holder;
 
 }
+
