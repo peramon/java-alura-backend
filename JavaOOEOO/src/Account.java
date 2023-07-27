@@ -3,7 +3,8 @@ public class Account {
     // Variables for account data
     Double balance;
     int agency, number;
-    String holder;
+    Customer holder;
+
 
     // public -> Access modifier
     public void deposit(double value){ // Params
