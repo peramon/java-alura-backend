@@ -5,6 +5,23 @@ public class Account {
     private int agency, number;
     Customer holder;
 
+    // Counting accounts, variable class
+    // Is not alterable by the instance
+    private static int total = 0;
+
+    public Account() {
+    }
+
+    public Account(int agency) {
+        if( agency <= 0 ) {
+            System.out.println("Not valid number 0");
+            this.agency = 1;
+        }else{
+            setAgency(agency);
+        }
+        this.total++;
+        System.out.println(" Accounts created : " + this.total);
+    }
 
     // public -> Access modifier
     public void deposit(double value){ // Params
@@ -44,6 +61,8 @@ public class Account {
     public void setAgency(int value){
         if(value > 0){
             this.agency = value;
+        }else{
+            System.out.println("Agency invalid number");
         }
     }
 
@@ -65,6 +84,10 @@ public class Account {
 
     public void setHolder(Customer holder) {
         this.holder = holder;
+    }
+
+    public static int getTotal(){
+            return Account.total;
     }
 }
 
