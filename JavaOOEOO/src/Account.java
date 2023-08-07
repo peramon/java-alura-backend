@@ -1,8 +1,8 @@
 // Entity Account
 public class Account {
     // Variables for account data
-    Double balance;
-    int agency, number;
+    private Double balance;
+    private int agency, number;
     Customer holder;
 
 
@@ -30,6 +30,41 @@ public class Account {
             return true;
         }
         return false;
+    }
+
+    public double getBalanace() {
+        return this.balance;
+    }
+
+    public void setBalanace(double value){
+        this.balance = value;
+    }
+
+    // agency
+    public void setAgency(int value){
+        if(value > 0){
+            this.agency = value;
+        }
+    }
+
+    public int getAgency() {
+        return this.agency;
+    }
+
+    public int getNumber() {
+        return number;
+    }
+
+    public void setNumber(int number) {
+        this.number = number;
+    }
+
+    public Customer getHolder() {
+        return holder;
+    }
+
+    public void setHolder(Customer holder) {
+        this.holder = holder;
     }
 }
 

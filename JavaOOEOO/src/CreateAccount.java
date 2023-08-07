@@ -3,16 +3,16 @@ public class CreateAccount {
         // Create an instance of the account
         Account firstAccount = new Account();
         // Add balance to account
-        firstAccount.balance = 1000.00;
+        firstAccount.setBalanace(1000.00);
         System.out.println("First account");
-        System.out.println(firstAccount.balance);
+        System.out.println(firstAccount.getBalanace());
 
         // Second account
         Account secondAccount = new Account();
         // Add balance to second account
-        secondAccount.balance = 300.55;
+        secondAccount.setBalanace(300.55);
         System.out.println("\nSecond Account");
-        System.out.println("Balance -> " + secondAccount.balance + " Agency -> " + secondAccount.agency);
+        System.out.println("Balance -> " + secondAccount.getBalanace() + " Agency -> " + secondAccount.getAgency());
 
     }
 }
