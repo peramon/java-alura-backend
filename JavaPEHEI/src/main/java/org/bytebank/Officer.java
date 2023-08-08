@@ -50,15 +50,7 @@ public class Officer {
     }
 
     public double getBonus() {
-        // If Type = 1 is manager
-        // If Type = 0 is officer
-        if(this.type == 0){
-            return this.salary * 0.1;
-        }else if(this.type == 1){
-            return this.salary;
-        }else{
-            return 0.0;
-        }
+        return this.salary * 0.1;
     }
 
 

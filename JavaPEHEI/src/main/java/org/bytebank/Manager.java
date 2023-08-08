@@ -18,4 +18,8 @@ public class Manager extends Officer{
     public boolean logIn(String value){
         return value == "Alura";
     }
+
+    public double getBonus(){
+        return super.getSalary() + super.getBonus();
+    }
 }
