@@ -53,5 +53,13 @@ public class Officer {
         return this.salary * 0.1;
     }
 
-
+    @Override
+    public String toString() {
+        return "Officer{" +
+                "name='" + name + '\'' +
+                ", identityCard='" + identityCard + '\'' +
+                ", salary=" + salary +
+                ", type=" + type +
+                '}';
+    }
 }

@@ -22,4 +22,6 @@ public class Manager extends Officer{
     public double getBonus(){
         return super.getSalary() + super.getBonus();
     }
+
+
 }
