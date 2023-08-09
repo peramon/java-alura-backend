@@ -2,26 +2,29 @@ package org.bytebank;
 
 public class Manager extends Officer implements Authentic{
 
+    private UtilAuthentic authentic;
 
     public Manager() {
+        this.authentic = new UtilAuthentic();
     }
 
-    public Manager(String name, String identityCard, double salary) {
+    /*public Manager(String name, String identityCard, double salary) {
         super(name, identityCard, salary);
-    }
+    }*/
 
+    @Override
     public double getBonus(){
-        return super.getSalary() + (super.getSalary() * 0.5);
+        return super.getSalary();
     }
 
 
     @Override
     public void setKey(String value) {
-
+        this.authentic.setKey(value);
     }
 
     @Override
     public boolean logIn(String value) {
-        return false;
+        return this.authentic.logIn(value);
     }
 }

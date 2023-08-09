@@ -2,7 +2,11 @@ package org.bytebank;
 
 public class Administrator extends Officer implements Authentic{
 
-    private String key;
+    private UtilAuthentic authentic;
+
+    public Administrator() {
+        this.authentic = new UtilAuthentic();
+    }
 
     @Override
     public double getBonus() {
@@ -11,12 +15,12 @@ public class Administrator extends Officer implements Authentic{
 
     @Override
     public void setKey(String value) {
-
+        this.setKey(value);
     }
 
     @Override
     public boolean logIn(String value) {
-        return false;
+        return this.authentic.logIn(value);
     }
 
 }
