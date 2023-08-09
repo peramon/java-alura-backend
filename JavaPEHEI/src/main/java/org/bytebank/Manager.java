@@ -1,8 +1,7 @@
 package org.bytebank;
 
-public class Manager extends Officer{
+public class Manager extends Officer implements Authentic{
 
-    private String key;
 
     public Manager() {
     }
@@ -11,17 +10,18 @@ public class Manager extends Officer{
         super(name, identityCard, salary);
     }
 
-    public void setKey(String value){
-        this.key = value;
-    }
-
-    public boolean logIn(String value){
-        return value == "Alura";
-    }
-
     public double getBonus(){
         return super.getSalary() + (super.getSalary() * 0.5);
     }
 
 
+    @Override
+    public void setKey(String value) {
+
+    }
+
+    @Override
+    public boolean logIn(String value) {
+        return false;
+    }
 }
