@@ -2,7 +2,7 @@ package org.bytebank;
 
 public class TestBonusControl {
     public static void main(String[] args) {
-        Officer paolo = new Officer();
+        Officer paolo = new Counter();
         paolo.setSalary(2000.00);
 
         Manager karla = new Manager();

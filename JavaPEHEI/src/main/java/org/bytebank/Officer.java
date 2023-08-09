@@ -1,6 +1,6 @@
 package org.bytebank;
 
-public class Officer {
+public abstract class Officer {
     private String name;
     private String identityCard;
     private double salary;
@@ -49,9 +49,7 @@ public class Officer {
         this.type = type;
     }
 
-    public double getBonus() {
-        return this.salary * 0.1;
-    }
+    public abstract double getBonus();
 
     @Override
     public String toString() {

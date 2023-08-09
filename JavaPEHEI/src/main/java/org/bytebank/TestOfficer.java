@@ -2,7 +2,7 @@ package org.bytebank;
 
 public class TestOfficer {
     public static void main(String[] args) {
-        Officer jose = new Officer();
+        Officer jose = new Counter();
         jose.setName("Jose");
         jose.setIdentityCard("12009853245");
         jose.setSalary(1200.00);

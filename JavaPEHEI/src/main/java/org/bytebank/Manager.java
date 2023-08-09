@@ -20,7 +20,7 @@ public class Manager extends Officer{
     }
 
     public double getBonus(){
-        return super.getSalary() + super.getBonus();
+        return super.getSalary() + (super.getSalary() * 0.5);
     }
 
 
