@@ -6,7 +6,7 @@ public class Flow {
         System.out.println("Start Home");
         try {
             method1();
-        }catch (MyException me){
+        } catch (MyException | ArithmeticException me) {
             System.out.println(me.getMessage());
             me.printStackTrace();
         }
@@ -14,19 +14,15 @@ public class Flow {
         System.out.println("End Home");
     }
 
-    public static void method1() throws MyException{
+    public static void method1() throws MyException {
         System.out.println("Start of method 1");
-        try{
-            method2();
-        }catch (MyException me){
-            System.out.println(me.getMessage());
-            me.printStackTrace();
-        }
+        method2();
+
 
         System.out.println("End of method 1");
     }
 
-    public static void method2() throws MyException{
+    public static void method2() throws MyException {
         System.out.println("Start of method 2");
         /*for (int i = 1; i <= 5; i++) {
             System.out.println("i = " + i);
@@ -46,6 +42,9 @@ public class Flow {
             }*//*
         }*/
         // throw new ArithmeticException();
+        int number = 50 / 0;
+        Account account = null;
+        account.deposit();
         throw new MyException("My exception was launched");
     }
 
