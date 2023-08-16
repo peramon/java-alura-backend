@@ -13,9 +13,9 @@ public class CurrentAccount extends Account{
     }
 
     @Override
-    public boolean withdraw(double value) {
+    public void withdraw(double value) {
         double commission = 0.2;
-        return super.withdraw(value+commission);
+        super.withdraw(value+commission);
     }
 
 }

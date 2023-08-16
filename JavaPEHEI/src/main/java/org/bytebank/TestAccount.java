@@ -7,6 +7,7 @@ public class TestAccount {
 
         accountCurrent.deposit(2000.00);
         accountCurrent.transfer(1000.00, savingAccount);
+//        accountCurrent.withdraw(2000.00); Trying the exception
 
         System.out.println(accountCurrent.getBalanace());
         System.out.println(savingAccount.getBalanace());
