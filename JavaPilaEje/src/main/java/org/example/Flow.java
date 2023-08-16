@@ -4,19 +4,31 @@ public class Flow {
 
     public static void main(String[] args) {
         System.out.println("Start Home");
-        method1();
+        try {
+            method1();
+        }catch (MyException me){
+            System.out.println(me.getMessage());
+            me.printStackTrace();
+        }
+
         System.out.println("End Home");
     }
 
-    public static void method1() {
+    public static void method1() throws MyException{
         System.out.println("Start of method 1");
-        method2();
+        try{
+            method2();
+        }catch (MyException me){
+            System.out.println(me.getMessage());
+            me.printStackTrace();
+        }
+
         System.out.println("End of method 1");
     }
 
-    public static void method2() {
+    public static void method2() throws MyException{
         System.out.println("Start of method 2");
-        for (int i = 1; i <= 5; i++) {
+        /*for (int i = 1; i <= 5; i++) {
             System.out.println("i = " + i);
             try {
                 if(i == 3){
@@ -29,12 +41,12 @@ public class Flow {
             } catch (ArithmeticException | NullPointerException e) {
                 System.out.println(e.getMessage());
                 e.printStackTrace();
-            }/*catch (NullPointerException n){
+            }*//*catch (NullPointerException n){
                 System.out.println(n.getMessage());
-            }*/
-        }
-        System.out.println("End of method 2");
-
+            }*//*
+        }*/
+        // throw new ArithmeticException();
+        throw new MyException("My exception was launched");
     }
 
 
