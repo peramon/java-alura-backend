@@ -1,4 +1,7 @@
-package org.bytebank;
+package org.bytebank.test;
+
+import org.bytebank.model.Counter;
+import org.bytebank.model.Officer;
 
 public class TestOfficer {
     public static void main(String[] args) {

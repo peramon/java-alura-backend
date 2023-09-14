@@ -1,4 +1,7 @@
-package org.bytebank;
+package org.bytebank.test;
+
+import org.bytebank.model.CurrentAccount;
+import org.bytebank.model.SavingAccount;
 
 public class TestAccount {
     public static void main(String[] args) {

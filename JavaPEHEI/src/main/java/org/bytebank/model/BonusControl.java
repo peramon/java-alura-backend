@@ -1,4 +1,4 @@
-package org.bytebank;
+package org.bytebank.model;
 
 public class BonusControl {
     private double sum;

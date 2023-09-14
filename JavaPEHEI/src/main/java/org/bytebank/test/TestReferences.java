@@ -1,4 +1,7 @@
-package org.bytebank;
+package org.bytebank.test;
+
+import org.bytebank.model.Manager;
+import org.bytebank.model.Officer;
 
 public class TestReferences {
     public static void main(String[] args) {

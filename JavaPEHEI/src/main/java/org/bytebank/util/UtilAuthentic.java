@@ -1,4 +1,4 @@
-package org.bytebank;
+package org.bytebank.util;
 
 public class UtilAuthentic {
     private String key;

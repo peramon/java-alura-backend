@@ -1,4 +1,4 @@
-package org.bytebank;
+package org.bytebank.model;
 
 public abstract class Officer {
     private String name;

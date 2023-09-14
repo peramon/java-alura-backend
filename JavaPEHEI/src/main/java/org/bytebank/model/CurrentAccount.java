@@ -1,4 +1,4 @@
-package org.bytebank;
+package org.bytebank.model;
 
 public class CurrentAccount extends Account{
 

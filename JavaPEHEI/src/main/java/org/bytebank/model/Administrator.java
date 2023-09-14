@@ -1,4 +1,6 @@
-package org.bytebank;
+package org.bytebank.model;
+
+import org.bytebank.util.UtilAuthentic;
 
 public class Administrator extends Officer implements Authentic{
 

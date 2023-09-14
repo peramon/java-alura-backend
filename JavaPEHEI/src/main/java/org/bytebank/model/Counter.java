@@ -1,6 +1,6 @@
-package org.bytebank;
+package org.bytebank.model;
 
-public class Counter extends Officer{
+public class Counter extends Officer {
 
     @Override
     public double getBonus() {

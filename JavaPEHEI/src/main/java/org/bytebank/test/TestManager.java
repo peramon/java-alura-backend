@@ -1,4 +1,6 @@
-package org.bytebank;
+package org.bytebank.test;
+
+import org.bytebank.model.Manager;
 
 public class TestManager {
     public static void main(String[] args) {

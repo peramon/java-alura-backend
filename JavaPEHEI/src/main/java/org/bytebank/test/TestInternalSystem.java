@@ -1,4 +1,8 @@
-package org.bytebank;
+package org.bytebank.test;
+
+import org.bytebank.model.Administrator;
+import org.bytebank.model.Customer;
+import org.bytebank.model.Manager;
 
 public class TestInternalSystem {
     public static void main(String[] args) {

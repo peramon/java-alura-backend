@@ -1,4 +1,9 @@
-package org.bytebank;
+package org.bytebank.test;
+
+import org.bytebank.model.BonusControl;
+import org.bytebank.model.Counter;
+import org.bytebank.model.Manager;
+import org.bytebank.model.Officer;
 
 public class TestBonusControl {
     public static void main(String[] args) {

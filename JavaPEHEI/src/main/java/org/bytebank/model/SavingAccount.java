@@ -1,6 +1,8 @@
-package org.bytebank;
+package org.bytebank.model;
 
-public class SavingAccount extends Account{
+import org.bytebank.model.Account;
+
+public class SavingAccount extends Account {
     public SavingAccount(int agency, int number) {
         super(agency, number);
     }
